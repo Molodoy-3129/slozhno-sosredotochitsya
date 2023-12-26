@@ -375,8 +375,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
   inset-inline-end: 0;
   inset-block-start: 22px;
 }
@@ -386,8 +386,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
   inset-block-end: 0;
 }
 
