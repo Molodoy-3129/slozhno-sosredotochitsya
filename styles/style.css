@@ -39,6 +39,10 @@
   inset-inline-start: -1px;
 }
 
+.header__theme-menu {
+  margin-right: 20px;
+}
+
 .header__theme-menu-list {
   display: flex;
   justify-content: space-between;
@@ -46,7 +50,6 @@
   width: 210px;
   gap: 10px;
   list-style: none;
-  right: 20px;
 }
 
 .header__theme-menu-button {
@@ -113,10 +116,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  position: absolute;
-  align-self: center;
-  left: -20px;
-  margin-bottom: 40px;
+  margin-block-start: 29px;
+  margin-inline-start: -20px;
 }
 
 .title-paragraph {
@@ -159,7 +160,7 @@
   margin-block-end: 80px;
 }
 
-.first-subtitle {
+.subtitle {
   max-width: 314.96px;
   color: var(--text-color);
   font-family: var(--main-font);
@@ -167,12 +168,17 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+  margin-block-end: 20px;
 }
 
-.main-text-paragraph {
+.first-text-block {
   flex-grow: 1;
   min-width: 100px;
   margin-block-end: 0;
+}
+
+.text-paragaph-gap {
+  margin-block-end: 20px;
 }
 
 .main-subtitle {
@@ -199,20 +205,10 @@
   margin-block-end: 20px;
 }
 
-.second-main-text-paragraph {
+.second-text-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-}
-
-.second-subtitle {
-  color: var(--text-color);
-  font-family: var(--main-font);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px;
-  max-width: 315px;
 }
 
 .subtext-subtitle {
@@ -227,7 +223,7 @@
   min-width: 200px;
 }
 
-.second-main-text-paragraph-first p {
+.second-text-block div p {
   color: var(--paragraph-color);
   max-width: 315px;
   min-width: 200px;
@@ -238,7 +234,7 @@
   line-height: 23.4px;
 }
 
-.second-main-text-paragraph-first h3 {
+.second-text-block div h3 {
   max-width: 315px;
   min-width: 200px;
   font-family: var(--main-font);
@@ -255,7 +251,7 @@
 }
 
 .main-subtext {
-  margin-block-end: 60px;
+  margin-block-end: 80px;
 }
 
 .main-subtext-subtile {
@@ -268,11 +264,11 @@
   max-width: 314.96px;
 }
 
-.paragraph-block-end:not(:last-of-type) {
+.third-text-block-paragraph:not(:last-of-type) {
   margin-block-end: 20px;
 }
 
-.third-subtitle {
+.third-text-block-subtitle {
   color: #000028;
   font-family: var(--main-font);
   font-size: 18px;
@@ -283,7 +279,7 @@
   margin-block-end: 20px;
 }
 
-.paragraph-block-end h4 {
+.third-text-block-paragraph h4 {
   background-color: var(--bg-color);
   color: #000028;
   font-family: var(--main-font);
@@ -350,7 +346,7 @@
   font-family: var(--main-font);
   color: var(--sub-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
-  margin-block-end: -15px;
+  margin-block-start: 20px;
 }
 
 .footer::before {
@@ -386,25 +382,26 @@
       margin-block-end: 80px;
   }
 
-  .first-subtitle {
+  .subtitle {
       max-width: 236px;
   }
 
   .title {
       font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+      margin-block-start: 90px;
   }
 
   .footer-title {
       font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .second-subtitle {
-      max-width: 236px;
-  }
-
   .title-paragraph {
       max-width: 364px;
       margin-block-end: 205px;
+  }
+
+  .header__theme-menu {
+      margin-right: 0px;
   }
 
   .header__theme-menu-list {
@@ -415,16 +412,17 @@
       margin-inline-end: 0px;
   }
 
-  .second-main-text-paragraph {
+  .second-text-block {
       display: block;
   }
 
-  .second-main-text-paragraph h3 {
+  .second-text-block div h3 {
       max-width: 100%;
   }
 
-  .second-main-text-paragraph p {
+  .second-text-block div p {
       max-width: 100%;
+      margin-block-end: 20px;
   }
 
   .subtext-subtitle {
@@ -437,12 +435,6 @@
 
   .footer::before {
       inset-inline-end: 0px;
-  }
-}
-
-@media (width < 768px) {
-  .main-text {
-      display: block;
   }
 }
 
@@ -463,11 +455,11 @@
   }
 
   .title {
-      left: 1px;
-      margin-block-end: 20px;
+      margin-block-start: -5px;
+      margin-inline-start: 0px;
   }
 
-  .first-subtitle {
+  .subtitle {
       margin-block-end: 20px;
       max-width: 355px;
   }
@@ -482,16 +474,12 @@
   }
 
   .header__theme-menu-list {
-      margin-block-start: 65px;
+      margin-block-start: 62px;
   }
 
   .header::before {
       inset-block-start: 0;
       inset-inline-end: 0;
-  }
-
-  .header__theme-menu {
-      inset-block-start: 70px;
   }
 
   .title-paragraph {
@@ -522,7 +510,7 @@
   }
 
   .footer-title {
-    margin-block-end: 0px;
+      margin-block-end: 15px;
   }
 
   .footer::after {
