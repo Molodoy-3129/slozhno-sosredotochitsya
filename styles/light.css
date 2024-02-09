@@ -18,8 +18,8 @@
   --shadow-color: #ff0070;
   --link-shadow-color:#FF8DCB;
   --border-bottom-color:#353430;
-  --img-background: url(../images/cover-image-light.png);
-  --paragraph-color:  #353430;
+  --img-background: url(/images/cover-image-light.png);
+  --paragraph-color: #353430;
 }
 
 .theme_light .inscription {
