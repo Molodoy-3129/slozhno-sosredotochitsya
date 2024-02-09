@@ -25,7 +25,8 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-inline-end: 1px;
+  inset-inline-end: 0px;
+  inset-block-start: 1px;
 }
 
 .header::after {
@@ -35,8 +36,8 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 40px;
-  inset-inline-start: -1px;
+  inset-block-end: 39px;
+  inset-inline-start: 1px;
 }
 
 .header__theme-menu {
@@ -92,8 +93,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  inset-inline-end: 30px;
-  inset-block-start: 0;
+  inset-inline-end: 28px;
+  inset-block-start: 1px;
 }
 
 .inscription::after {
@@ -104,8 +105,8 @@
   background: var(--accent-color);
   filter: drop-shadow(0px 0px 4px var(--shadow-color));
   border-radius: 50px;
-  inset-block-start: 7px;
-  inset-inline-end: 8px;
+  inset-block-start: 9px;
+  inset-inline-end: 9px;
 }
 
 .title {
@@ -201,7 +202,6 @@
   line-height: 23.4px;
 }
 
-
 .second-text-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -220,7 +220,6 @@
   min-width: 200px;
 }
 
-
 .second-main-text-paragraph-first p {
   margin-block-end: 20px;
 }
@@ -238,7 +237,6 @@
   line-height: 23.4px;
   max-width: 314.96px;
 }
-
 
 .third-text-block-paragraph:not(:last-of-type) {
   margin-block-end: 20px;
@@ -332,9 +330,8 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-inline-end: 0;
-  inset-block-start: 30px;
-  inset-inline-end: 1px;
+  inset-block-start: 31px;
+  inset-inline-end: 0px;
 }
 
 .footer::after {
@@ -344,29 +341,30 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 10px;
-  inset-inline-start: 0px;
+  inset-block-end: 9px;
+  inset-inline-start: 1px;
 }
 
 @media (width < 1024px) {
   .second-text-block {
-    display: block;
-}
+      display: block;
+  }
 
-.main-subtitle {
-    max-width: 100%;
-}
+  .main-subtitle {
+      max-width: 100%;
+  }
 
-.text-paragaph {
-    max-width: 100%;
-    margin-block-end: 20px;
-}
+  .text-paragaph {
+      max-width: 100%;
+      margin-block-end: 20px;
+  }
 }
 
 @media (width <= 768px) {
   .main-text {
       display: grid;
       grid-template-columns: 1fr 2fr;
+      margin-block-end: 60px;
   }
 
   .main-subtext {
@@ -403,8 +401,6 @@
       margin-inline-end: 0px;
   }
 
- 
-
   .subtext-subtitle {
       max-width: 236px;
   }
@@ -420,7 +416,7 @@
 
 @media (width < 768px) {
   .main-text {
-    display: block;
+      display: block;
   }
 }
 
@@ -441,7 +437,7 @@
   }
 
   .title {
-      margin-block-start: -5px;
+      margin-block-start: -7px;
       margin-inline-start: 0px;
   }
 
@@ -460,7 +456,7 @@
   }
 
   .header__theme-menu-list {
-      margin-block-start: 62px;
+      margin-block-start: 64px;
   }
 
   .header::before {
@@ -469,7 +465,7 @@
   }
 
   .title-paragraph {
-      margin-block-end: 80px;
+      margin-block-end: 77px;
   }
 
   .second-subtitle {
