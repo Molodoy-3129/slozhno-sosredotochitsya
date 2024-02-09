@@ -7,7 +7,6 @@
   padding: 20px;
   background: var(--img-background) no-repeat center fixed;
   background-size: cover;
-  transition: 1.5s;
 }
 
 .header {
