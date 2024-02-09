@@ -202,9 +202,6 @@
   line-height: 23.4px;
 }
 
-.margin-block-end {
-  margin-block-end: 20px;
-}
 
 .second-text-block {
   display: grid;
@@ -357,11 +354,11 @@
     display: block;
 }
 
-.second-text-block div h3 {
+.main-subtitle {
     max-width: 100%;
 }
 
-.second-text-block div p {
+.text-paragaph {
     max-width: 100%;
     margin-block-end: 20px;
 }
