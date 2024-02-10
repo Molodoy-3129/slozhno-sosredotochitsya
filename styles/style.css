@@ -5,8 +5,11 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
-  background: var(--img-background) no-repeat center fixed;
+  background: var(--img-background) fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 .header {
