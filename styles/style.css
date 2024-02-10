@@ -5,8 +5,8 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
-  background-color: var(--backgraund-color);
   background: var(--img-background) fixed;
+  background-color: var(--back-background-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
