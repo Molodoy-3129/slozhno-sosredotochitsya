@@ -5,6 +5,7 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
+  background-color:#000028;
   background: var(--img-background) fixed;
   background-size: cover;
   background-repeat: no-repeat;
