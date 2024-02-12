@@ -28,8 +28,8 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-inline-end: 21px;
-  inset-block-start: 21px;
+  inset-inline-end: 20px;
+  inset-block-start: 19px;
 }
 
 .header::after {
@@ -39,12 +39,13 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 19px;
+  inset-block-end: 21px;
   inset-inline-start: 20px;
 }
 
 .header__theme-menu {
-  margin-right: 20px;
+  margin-right: 22px;
+  margin-block-start: -3px;
 }
 
 .header__theme-menu-list {
@@ -68,6 +69,9 @@
   color: var(--text-color);
   font-size: 18px;
   font-family: var(--main-font);
+  align-items: center;
+  text-align: center;
+  
 }
 
 .header__theme-menu-button:focus {
@@ -133,7 +137,7 @@
   font-weight: 700;
   color: #000028;
   background: var(--bg-color);
-  margin-block-end: 135px;
+  margin-block-end: 137px;
   align-self: flex-end;
   margin-left: auto;
 }
@@ -340,7 +344,7 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-block-start: 31px;
+  inset-block-start: 29px;
   inset-inline-end: 20px;
 }
 
@@ -351,7 +355,7 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 9px;
+  inset-block-end: 11px;
   inset-inline-start: 20px;
 }
 
@@ -372,13 +376,13 @@
 
 @media (width <= 768px) {
   .header::after {
-      inset-block-end: 23.5px;
+      inset-block-end: 20px;
       inset-inline-start: 20px;
   }
 
   .header::before {
-      inset-inline-end: 21px;
-      inset-block-start: 17px;
+      inset-inline-end: 20px;
+      inset-block-start: 20px;
   }
 
   .inscription::before {
