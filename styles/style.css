@@ -4,13 +4,11 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
   margin: 0 auto;
-  padding: 20px;
   background: var(--img-background) fixed;
   background-color: var(--back-background-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 .header {
@@ -19,7 +17,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  margin-block-end: 40px;
+  margin-block-end: 60px;
+  padding: 20px 20px 0 20px;
 }
 
 .header::before {
@@ -29,8 +28,8 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-inline-end: 0px;
-  inset-block-start: 1px;
+  inset-inline-end: 21px;
+  inset-block-start: 21px;
 }
 
 .header::after {
@@ -40,8 +39,8 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 39px;
-  inset-inline-start: 1px;
+  inset-block-end: 19px;
+  inset-inline-start: 20px;
 }
 
 .header__theme-menu {
@@ -97,8 +96,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  inset-inline-end: 28px;
-  inset-block-start: 1px;
+  inset-inline-end: 50px;
+  inset-block-start: 22px;
 }
 
 .inscription::after {
@@ -109,8 +108,8 @@
   background: var(--accent-color);
   filter: drop-shadow(0px 0px 4px var(--shadow-color));
   border-radius: 50px;
-  inset-block-start: 9px;
-  inset-inline-end: 9px;
+  inset-block-start: 29px;
+  inset-inline-end: 29px;
 }
 
 .title {
@@ -121,7 +120,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  margin-block-start: 29px;
+  margin-block-start: 30px;
   margin-inline-start: -20px;
 }
 
@@ -134,7 +133,7 @@
   font-weight: 700;
   color: #000028;
   background: var(--bg-color);
-  margin-block-end: 155px;
+  margin-block-end: 135px;
   align-self: flex-end;
   margin-left: auto;
 }
@@ -163,6 +162,7 @@
   display: flex;
   gap: 20px;
   margin-block-end: 80px;
+  padding: 0 20px 0 20px;
 }
 
 .subtitle {
@@ -230,6 +230,7 @@
 
 .main-subtext {
   margin-block-end: 80px;
+  padding: 0 20px 0 20px;
 }
 
 .main-subtext-subtile {
@@ -266,6 +267,10 @@
   font-weight: 400;
   line-height: 23.4px;
   margin-block-end: 10px;
+}
+
+.main-cards {
+  padding: 0 20px 0 20px;
 }
 
 .main-cards h2 {
@@ -317,6 +322,7 @@
   display: grid;
   align-items: center;
   text-align: center;
+  padding: 0 20px 0 20px;
 }
 
 .footer-title {
@@ -335,7 +341,7 @@
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
   inset-block-start: 31px;
-  inset-inline-end: 0px;
+  inset-inline-end: 20px;
 }
 
 .footer::after {
@@ -346,7 +352,7 @@
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
   inset-block-end: 9px;
-  inset-inline-start: 1px;
+  inset-inline-start: 20px;
 }
 
 @media (width < 1024px) {
@@ -365,6 +371,26 @@
 }
 
 @media (width <= 768px) {
+  .header::after {
+      inset-block-end: 23.5px;
+      inset-inline-start: 20px;
+  }
+
+  .header::before {
+      inset-inline-end: 21px;
+      inset-block-start: 17px;
+  }
+
+  .inscription::before {
+      inset-inline-end: 50px;
+      inset-block-start: 20px;
+  }
+
+  .inscription::after {
+      inset-block-start: 27px;
+      inset-inline-end: 29px;
+  }
+
   .main-text {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -390,7 +416,7 @@
 
   .title-paragraph {
       max-width: 364px;
-      margin-block-end: 205px;
+      margin-block-end: 186px;
   }
 
   .header__theme-menu {
@@ -410,11 +436,12 @@
   }
 
   .footer::after {
-      inset-inline-start: 0px;
+      inset-inline-start: 20px;
   }
 
   .footer::before {
-      inset-inline-end: 0px;
+      inset-inline-end: 20px;
+      inset-block-start: 29px;
   }
 }
 
@@ -426,22 +453,37 @@
 
 @media (width <= 375px) {
   .page {
-      padding: 10px;
       min-height: 668px;
+  }
+
+  .inscription::before {
+      inset-inline-end: 38px;
+      inset-block-start: 10px;
+  }
+
+  .inscription::after {
+      inset-block-start: 18px;
+      inset-inline-end: 18px;
   }
 
   .header {
-      margin-block-end: 30px;
+      margin-block-end: 40px;
       min-height: 668px;
+      padding: 10px 10px 0 10px;
+  }
+
+  .header::before {
+      margin-block-start: 10px;
+      margin-inline-end: 8px;
   }
 
   .header::after {
-      inset-block-end: 20px;
-      inset-inline-start: 1px;
+      inset-block-end: 10px;
+      inset-inline-start: 12px;
   }
 
   .title {
-      margin-block-start: -7px;
+      margin-block-start: -8px;
       margin-inline-start: 0px;
   }
 
@@ -453,6 +495,11 @@
   .main-text {
       display: block;
       margin-block-end: 50px;
+      padding: 0 10px 0 10px;
+  }
+
+  .main-subtext {
+      padding: 0 10px 0 10px;
   }
 
   .main-subtext {
@@ -469,7 +516,8 @@
   }
 
   .title-paragraph {
-      margin-block-end: 77px;
+      margin-block-end: 67px;
+      max-width: 364px;
   }
 
   .second-subtitle {
@@ -478,6 +526,10 @@
 
   .subtext-subtitle {
       max-width: 355px;
+  }
+
+  .main-cards {
+      padding: 0 10px 0 10px;
   }
 
   .main-cards h2 {
@@ -491,8 +543,9 @@
   }
 
   .footer {
-      margin-block-start: 40px;
+      margin-block-start: 38px;
       min-height: 668px;
+      padding: 0 10px 0 10px;
   }
 
   .footer-title {
@@ -500,12 +553,12 @@
   }
 
   .footer::after {
-      inset-block-end: 10px;
-      inset-inline-start: 0px;
+      inset-block-end: 8px;
+      inset-inline-start: 10px;
   }
 
   .footer::before {
-      inset-inline-end: 0;
-      inset-block-start: 10px;
+      inset-inline-end: 10px;
+      inset-block-start: 13px;
   }
-} 
+}
