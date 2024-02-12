@@ -473,8 +473,8 @@
   }
 
   .header::before {
-      margin-block-start: 10px;
-      margin-inline-end: 8px;
+      inset-block-start: 10px;
+      inset-inline-end: 9px;
   }
 
   .header::after {
@@ -510,11 +510,7 @@
       margin-block-start: 64px;
   }
 
-  .header::before {
-      inset-block-start: 0;
-      inset-inline-end: 0;
-  }
-
+  
   .title-paragraph {
       margin-block-end: 67px;
       max-width: 364px;
