@@ -17,7 +17,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  margin-block-end: 56px;
+  margin-block-end: 60px;
   padding: 20px 20px 0 20px;
 }
 
@@ -28,8 +28,8 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-inline-end: 18px;
-  inset-block-start: 18px;
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
 }
 
 .header::after {
@@ -39,13 +39,12 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 22px;
-  inset-inline-start: 22px;
+  inset-block-end: 20px;
+  inset-inline-start: 20px;
 }
 
 .header__theme-menu {
   margin-right: 18px;
-  margin-block-start: -2px;
 }
 
 .header__theme-menu-list {
@@ -98,8 +97,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  inset-inline-end: 46px;
-  inset-block-start: 18px;
+  inset-inline-end: 47px;
+  inset-block-start: 20px;
 }
 
 .inscription::after {
@@ -110,8 +109,8 @@
   background: var(--accent-color);
   filter: drop-shadow(0px 0px 4px var(--shadow-color));
   border-radius: 50px;
-  inset-block-start: 26px;
-  inset-inline-end: 26px;
+  inset-block-start: 28px;
+  inset-inline-end: 28px;
 }
 
 .title {
@@ -135,7 +134,7 @@
   font-weight: 700;
   color: #000028;
   background: var(--bg-color);
-  margin-block-end: 139px;
+  margin-block-end: 135px;
   align-self: flex-end;
   margin-left: auto;
 }
@@ -342,7 +341,7 @@
   height: 25px;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  inset-block-start: 29px;
+  inset-block-start: 30px;
   inset-inline-end: 20px;
 }
 
@@ -353,7 +352,7 @@
   height: 25px;
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
-  inset-block-end: 11px;
+  inset-block-end: 10px;
   inset-inline-start: 20px;
 }
 
