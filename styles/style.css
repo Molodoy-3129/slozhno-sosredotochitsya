@@ -549,11 +549,11 @@
 
   .footer::after {
       inset-block-end: 8px;
-      inset-inline-start: 10px;
+      inset-inline-start: 9px;
   }
 
   .footer::before {
-      inset-inline-end: 10px;
+      inset-inline-end: 11px;
       inset-block-start: 13px;
   }
 }
