@@ -373,13 +373,13 @@
 
 @media (width <= 768px) {
   .header::after {
-      inset-block-end: 20px;
+      inset-block-end: 21px;
       inset-inline-start: 20px;
   }
 
   .header::before {
-      inset-inline-end: 20px;
-      inset-block-start: 20px;
+      inset-inline-end: 21px;
+      inset-block-start: 19px;
   }
 
   .inscription::before {
@@ -428,7 +428,7 @@
       flex-direction: column;
       text-align: end;
       gap: 10px;
-      margin-block-start: 170px;
+      margin-block-start: 171px;
       margin-inline-end: 0px;
   }
 
@@ -475,12 +475,12 @@
 
   .header::before {
       inset-block-start: 10px;
-      inset-inline-end: 9px;
+      inset-inline-end: 11px;
   }
 
   .header::after {
       inset-block-end: 10px;
-      inset-inline-start: 12px;
+      inset-inline-start: 9px;
   }
 
   .title {
@@ -505,7 +505,8 @@
   }
 
   .header__theme-menu-list {
-      margin-block-start: 64px;
+      margin-block-start: 65px;
+      margin-inline-end: 2px;
   }
 
   
