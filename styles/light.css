@@ -29,14 +29,26 @@
 }
 
 @media(prefers-color-scheme: light) {
-  .page {
-    background: var(--img-background) fixed;
-    background-color: var(--back-background-color);
+  :root {
+  --text-color: #353430;
+  --back-background-color: #FFF1F7;
+  --accent-color: #353430;
+  --accent-color:#FFC2E6;
+  --bg-color:  #FF8DCB;
+  --sub-color: #FFC2E6;
+  --dim-color: rgba(50, 49, 45, 0.40);
+  --shadow-color: #ff0070;
+  --link-shadow-color:#FF8DCB;
+  --border-bottom-color:#353430;
+  --img-background: url(../images/cover-image-light.png);
+  --paragraph-color: #353430;
   }
   
-  .theme_light .inscription {
-    visibility: hidden;
-  }
 }
+
+.theme_light .inscription {
+  visibility: hidden;
+}
+
 
 
